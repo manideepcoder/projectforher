@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 18th!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Screen 1: The Game -->
+    <div id="game-screen" class="screen active">
+        <div class="instructions">
+            <h1>Catch 18 Hearts</h1>
+            <p>To unlock your special surprise...</p>
+            <div class="progress"><span class="heart-icon">♥</span> <span id="score">0</span> / 18</div>
+        </div>
+        <div id="game-container"></div>
+    </div>
+
+    <!-- Screen 2: The Surprise -->
+    <div id="surprise-screen" class="screen hidden">
+        <div class="particles" id="particles"></div>
+        <div class="card">
+            <div class="photo-frame">
+                <img src="couple_photo.jpg" alt="Us" id="couple-photo">
+                <div class="photo-glow"></div>
+            </div>
+            <h1 class="title">Happy 18th!</h1>
+            <p class="message">
+                I know our grand anniversary is on August 18th, but any excuse to celebrate you today is a good one. 
+                Thank you for making every single day feel magical. I love you so much!
+            </p>
+            <button id="replay-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
